@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+    <style>
+      #resize {
+        width: 200px;
+        height: 200px;
+        border: 1px solid #000;
+        background-color: yellow;
+      }
+    </style>
+    <script>
+      var x;
+      x = $(document);
+      x.ready(iniciar);
+      function iniciar() {
+        var x = $("#resize");
+        x.resizable();
+      }
+    </script>
+  </head>
+  <body>
+    <div id="resize">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, eos,
+      voluptates voluptate error delectus ratione facere nisi tempora
+      consequuntur maiores cupiditate quis dolor pariatur necessitatibus minima
+      facilis rerum vel excepturi!
+    </div>
+  </body>
+</html>
